@@ -45,6 +45,10 @@ h1.navbar-brand:hover,
     color: #e15f41;
 }
 
+textarea {
+    resize: none;
+}
+
 @media (max-width: 767) {
     
 }

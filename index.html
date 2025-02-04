@@ -400,19 +400,28 @@
                         <form>
                             <div class="mb-3">
                                 <label for="nome" class="form-label fw-bold fontColor">Seu nome</label>
-                                <input type="text" id="nome" class="form-control" required>
+                                <input type="text" id="nome" name="nome" class="form-control" required>
+                                <div class="nomeFeedback invalid-feedback">
+                                    Por favor insira nome completo
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label fw-bold fontColor">Seu e-mail (opcional)</label>
-                                <input type="email" id="email" class="form-control">
+                                <input type="email" id="email" name="email" class="form-control">
+                                <div class="emailFeedback invalid-feedback">
+                                    Coloque seu melhor email
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label for="tel" class="form-label fw-bold fontColor">Seu telefone</label>
-                                <input type="tel" id="tel" class="form-control" required>
+                                <input type="tel" id="tel" name="tel" class="form-control" required>
+                                <div class="telFeedback invalid-feedback">
+                                    Coloque seu número
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label for="mensagem" class="form-label fw-bold fontColor">Seu mensagem</label>
-                                <textarea name="mensagem" class="form-control" required></textarea>
+                                <textarea name="mensagem" name="mensagem" class="form-control" required></textarea>
                             </div>
                             <button type="submit" class="btn fw-bold">Enviar</button>
                         </form>
@@ -456,5 +465,10 @@
         </section>
     </div>
     <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_pt_BR.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
